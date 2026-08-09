@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Database, Sparkles, Send, Table as TableIcon, AlertCircle, Loader2, Copy, CheckCircle2, Terminal, UploadCloud, FileText, Zap, ShieldCheck, Users, Mail, Linkedin, Globe } from 'lucide-react';
+import { Database, Sparkles, Send, Table as TableIcon, AlertCircle, Loader2, Copy, CheckCircle2, Terminal, UploadCloud, FileText, Zap, ShieldCheck, Users } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const API_BASE_URL = 'https://datapulse-backend-uj3b.onrender.com';
@@ -362,37 +362,39 @@ export default function App() {
 
           {/* Social Links & Contact */}
           <div className="flex flex-wrap items-center gap-4">
+            
+            {/* Mail */}
             <a 
               href="mailto:vishwachiniwar@gmail.com" 
               className="flex items-center gap-1.5 hover:text-blue-400 transition-colors"
             >
-              <Mail className="w-3.5 h-3.5 text-blue-400" />
+              <svg className="w-3.5 h-3.5 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
               <span>Contact Me</span>
             </a>
 
             <span className="text-slate-700">•</span>
 
+            {/* LinkedIn */}
             <a 
               href="https://www.linkedin.com/in/vishwanath-chiniwar-a79867252/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 hover:text-blue-400 transition-colors"
             >
-              <Linkedin className="w-3.5 h-3.5 text-blue-400" />
+              <svg className="w-3.5 h-3.5 text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
               <span>LinkedIn</span>
             </a>
 
             <span className="text-slate-700">•</span>
 
-            {/* <a 
-              href="https://www.instagram.com/vishwa_chiniwar/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:text-pink-400 transition-colors"
-            >
-              <Instagram className="w-3.5 h-3.5 text-pink-400" />
-              <span>Instagram</span>
-            </a> */}
+            {/* Instagram */}
             <a 
               href="https://www.instagram.com/vishwa_chiniwar/" 
               target="_blank" 
@@ -409,13 +411,18 @@ export default function App() {
 
             <span className="text-slate-700">•</span>
 
+            {/* Portfolio / Globe */}
             <a 
               href="https://portfolio-86664.web.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 hover:text-indigo-400 transition-colors bg-indigo-500/10 border border-indigo-500/20 px-2.5 py-1 rounded-full"
             >
-              <Globe className="w-3.5 h-3.5 text-indigo-400" />
+              <svg className="w-3.5 h-3.5 text-indigo-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
               <span className="text-indigo-300 font-medium">Portfolio Portal</span>
             </a>
           </div>
