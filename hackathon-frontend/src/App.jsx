@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Database, Sparkles, Send, Table as TableIcon, AlertCircle, Loader2, Copy, CheckCircle2, Terminal, UploadCloud, FileText, Zap, ShieldCheck, Users, Mail, Linkedin, Instagram, Globe } from 'lucide-react';
+import { Database, Sparkles, Send, Table as TableIcon, AlertCircle, Loader2, Copy, CheckCircle2, Terminal, UploadCloud, FileText, Zap, ShieldCheck, Users, Mail, Linkedin, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const API_BASE_URL = 'https://datapulse-backend-uj3b.onrender.com';
@@ -384,13 +384,26 @@ export default function App() {
 
             <span className="text-slate-700">•</span>
 
-            <a 
+            {/* <a 
               href="https://www.instagram.com/vishwa_chiniwar/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 hover:text-pink-400 transition-colors"
             >
               <Instagram className="w-3.5 h-3.5 text-pink-400" />
+              <span>Instagram</span>
+            </a> */}
+            <a 
+              href="https://www.instagram.com/vishwa_chiniwar/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 hover:text-pink-400 transition-colors"
+            >
+              <svg className="w-3.5 h-3.5 text-pink-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
               <span>Instagram</span>
             </a>
 
